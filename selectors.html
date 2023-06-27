@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #param{
+            /* Id  */
+            text-align: center;
+            color: red;
+            background-color: aquamarine;
+        }
+        
+        h1{
+            /* Element */
+            background-color: burlywood;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .di1{
+            /* Class */
+            background-color: blue;
+        }
+
+
+        div.royal h1.di1{
+            /* div.royal = element.class */
+            font-family: cursive;
+        }
+
+        #patel{
+            font-family: facile sans;
+            color: brown;
+            background-color: aquamarine;
+            font-weight: lighter;
+        }
+
+        div.royal div.hp h2{
+            color: chocolate;
+        }
+
+        h2,h3{
+            /* element, element */
+            color: blue;
+        }
+
+        .lenovo{
+            background-color: bisque;
+            font-size: larger;
+        }
+
+        *{
+            /* * ---> Universal Selector */
+            /* text-align: center; */
+            margin: 10;
+            /* padding: 0; */
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <ol>
+        <li>Simple Selectors
+            <ul>
+                <li>Select elements based on name, id, class</li>
+            </ul>
+        </li><br>
+        <li>Combinator 
+            <ul>
+                <li>Select elements based on a Specific relationship between them</li>
+            </ul>
+        </li><br>
+        <li>Pseudo-class Selectors
+            <ul>
+                <li>Select elements based on a certain state</li>
+            </ul>
+        </li><br>
+        <li>Pseudo-elements Selectors
+            <ul>
+                <li>Select and style a part if an element</li>
+            </ul>
+        </li><br>
+        <li>Attribute Selectors
+
+            <ul>
+                <li>select elements based on attribute or attribute value</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>--------------------------------------------------------</h3>
+
+    <h1>This is h1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dicta.</p>
+
+    <h1>This is another h1</h1>
+
+    <h1 id="param">This is h1#param</h1>
+
+    <div>
+        <h1 class="di1">div ---> h1.di1</h1>
+    </div>
+
+    <div class="royal">
+        <h1 class="di1">div.royal h1.di1</h1>
+        <h1 class="di1" id="patel">div.royal h1.di1 #patel</h1>
+    </div>
+
+    <div class="royal">
+        <h1>div.royal h1</h1>
+    </div><br>
+
+    <div class="royal">
+
+        <div class="hp">
+            <h2>Id Selectors >>>> Class Selectors >>>> Name Selectors</h2>
+        </div><br>
+
+        <div class="lenovo">
+            <h2>Id Selectors >>>> Class Selectors >>>> Name Selectors</h2>
+        </div>
+
+    </div>
+</body>
+</html>
