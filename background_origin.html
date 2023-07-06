@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Origin</title>
+
+    <style>
+        .box{
+            width: 500px;
+            height: 350px;
+            /* background-color: aqua; */
+            border: 20px dotted red;
+            /* margin: 100px 500px 100px 700px; */
+            margin: 150px auto;
+            padding: 20px;
+            /* overflow: auto; */
+            background-image: url(/images/nature2.avif);
+            /* background-size: cover; */
+            background-size: 100% 350px;
+            background-repeat: no-repeat;
+            /* background-origin: border-box; */
+            /* background-origin: padding-box; */
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos numquam sequi blanditiis vel aliquam sint commodi magnam, ratione eius laborum animi in illo accusantium voluptatem facilis atque, officia, assumenda iste earum pariatur eaque odit aperiam fugiat. Earum blanditiis dignissimos totam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> -->
+    </div>
+</body>
+</html>
