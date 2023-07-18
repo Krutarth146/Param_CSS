@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        body{
+            background-image: url(/images/nature1.avif);
+            background-size: cover;
+        }
+
+        .box{
+            width: 550px;
+            height: 550px;
+            border: 10px solid red;
+            margin: 120px auto;
+            /* background-image: radial-gradient(circle at top right,red 30%, yellow 40%,green 60%); */
+            /* background-image: radial-gradient(circle at 30% 30%,red 10%, yellow 40%,green 60%); */
+            /* background-image: radial-gradient(ellipse at top,yellow, transparent), radial-gradient(ellipse at bottom, red, transparent), radial-gradient(ellipse at left, blue, transparent), radial-gradient(ellipse at right, magenta, transparent); */
+
+
+            /* background-image: radial-gradient(closest-side at 70%,red, yellow, green); */
+            /* background-image: radial-gradient(closest-corner at 70%,red, yellow, green); */
+            /* background-image: radial-gradient(farthest-side at 20%,red, yellow, green); */
+            /* background-image: radial-gradient(farthest-corner at 20%,red, yellow, green); */
+            background-image: repeating-radial-gradient(at 40%, black 10%, transparent 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
