@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        p{
+            display: block;
+        }
+
+
+        span{
+            margin: 20px;
+            width: 80px;
+            height: 30px;
+            border: 2px solid red;
+            display: inline-block;
+        }
+
+        img
+        {
+            display: inline-block;
+        }
+
+        a{
+            border: 2px solid green;
+            display: inline-block;
+            width: 100px;
+            height: 110px;
+        }
+
+        ul{
+            list-style: none;
+            text-align: end;
+            background-color: black;
+            color: #fff;
+            padding: 30px;
+        }
+        
+        li{
+            margin-right: 20px;
+            display: inline;
+            padding: 40px;
+            /* border: 2px solid red; */
+        }
+
+        li:hover{
+            color: blue;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+        </style>
+        <!-- Block Element, Inline Element Defination 10 times-->
+</head>
+<body>
+    <!-- Block --- H1 to H6, p -->
+    <!-- Inline --- span, a -->
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact US</li>
+        </ul>
+    </nav>
+
+
+    <h1><span>Hello </span><span style="color: blue;">Krutarth </span><span>Patel</span></h1>
+
+    <p>Lorem ipsum dolor sit.</p>
+
+    <p>Lorem ipsum dolor sit.</p>
+
+    <span>Lorem ipsum dolor sit.</span>
+    <span>Lorem ipsum dolor sit.</span>
+
+    <img src="/images/nature1.avif" alt="Error" width="20%">
+
+    <a href="#">Login</a>
+    <a href="#">Submit</a>
+    
+</body>
+</html>
