@@ -19,11 +19,11 @@
             gap: 20px; */
             /* row-gap: 30px; */
             /* column-gap: 30px; */
-            flex-flow: row wrap-reverse;
-            gap: 20px;
+            flex-flow: row wrap;
+            gap: 10px;
             /* justify-content: flex-end; */
             /* justify-content: space-around; */
-            justify-content: space-between;
+            /* justify-content: space-between; */
             align-items: center;
             align-content: space-evenly;
         }
@@ -32,6 +32,21 @@
             border: 2px solid green;
             width: 80px;
         }
+
+        #box-1{
+            order: 1;
+            /* flex-grow: 1;
+            flex-shrink: 2; */
+            flex-basis: 200px;
+        }
+
+        #box-3{
+            flex-grow: 2;
+            flex: 0 2px 200px;
+        }
+
+
+        
     </style>
 </head>
 <body>
