@@ -75,3 +75,38 @@ ul{
     padding: 15px 30px;
     text-align: center;
 }
+
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.new-links{
+    flex-basis: 700px;
+}
+
+#nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    padding: 12px 24px;
+    color: #fff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
