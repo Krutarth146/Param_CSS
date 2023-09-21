@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/nature1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+.menu-bar{
+    background: rgb(6, 47, 87);
+    color: #fff;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu-bar ul li{
+    /* border: 3px solid red; */
+    width: 130px;
+    padding: 15px;
+    margin: 25px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.menu-bar ul li:hover{
+    background-color: burlywood;
+    color: rgb(6, 47, 88);
+    border-radius: 5px;
+}
+
+.submenu{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background: rgb(6, 47, 88);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu ul li:hover{
+    background-color: burlywood;
+    color: rgb(6, 47, 88);
+    border-radius: 5px;
+}
