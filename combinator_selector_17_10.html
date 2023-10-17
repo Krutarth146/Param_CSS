@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p{
+            color: blue;
+        }
+
+        div.p
+        {
+            color: red;
+        }
+
+        .p{
+            color: green;
+        }
+
+        div > p{
+            background-color: yellow;
+        }
+
+        div > section{
+            text-align: center;
+        }
+
+        div+p{
+            background-color: green;
+        }
+
+        div ~ p{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <!-- Combinator Means Relationship between the Selectors
+
+    1. descendant Selector (space) <br>
+    2. Child Selector (>) <br>
+    3. adjacent sibling Selector (+) <br>
+    4. General Sibling Selector (~) <br>
+
+<br><br><br>
+    1. descendant Selector (space) <br>
+    <div>
+        <p>div p</p>
+    </div>
+
+    <div class="p">
+        div.p
+    </div>
+<br><br><br>
+
+
+    2. Child Selector (>) <br>
+    <div>
+        <p>Para 1 Under div</p>
+        <p>Para 2 Under div</p>
+
+        <section>
+            <p>Para 3 Under div (Inside Section Tag)</p>
+        </section>
+
+        <p>Para 4 Under div</p>
+    </div>
+
+    <p>Para 5 Not in a div</p>
+    <p>Para 6 Not in a div</p>
+
+    <br><br><hr><br>
+
+    3. adjacent sibling Selector (+) <br>
+
+    <div>
+        <p>Paragraph 1 Under div</p>
+        <p>Paragraph 2 Under div</p>
+    </div>
+    
+    <p>Para 4 outside div</p>
+    <p>Para 3 outside div</p>
+
+    <div>
+        <p>Paragraph 5 Under div</p>
+        <p>Paragraph 6 Under div</p>
+    </div>
+
+    <p>Para 8 outside div</p>
+    <p>Para 7 outside div</p>
+    <br><br><hr><br> -->
+
+
+    4. General Sibling Selector (~) <br>
+
+    <h1>H1 Tag</h1>
+    <p>Para 1</p>
+
+    <div>
+        <p>Para 2</p>
+    </div>
+
+    <p>Para 3</p>
+
+    <samp>Sample Tag</samp>
+
+    <p>Para 4</p>
+</body>
+</html>

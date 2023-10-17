@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        p{
+            color: blue;
+            text-align: center;
+        }
+
+        #param{
+            text-align: center;
+        }
+
+        .center{
+            color: red;
+        }
+
+        p.center{
+            color: green;
+        }
+
+        *{
+            /* Universal Selector */
+            box-sizing: border-box;
+        }
+
+        h1,p,h2{
+            text-align: center;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    1. Simple Selectors (Element Name, class, Id) <br>
+    2. Combinator Selectors <br>
+    3. Pseudo class Selectors <br>
+    4. Pseudo Element Selectors <br>
+    5. Attribute Selectors <br>
+    <br>
+
+    1. Simple Selectors --------------------
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, sint.
+    </p>
+
+    <div id="param">
+        Hello Param
+    </div>
+
+    <div class="center">
+        Hello Center class
+    </div>
+
+    <p class="center">Hello P.center</p>
+
+    #id  <br>
+    .class <br>
+    element.class <br>
+    *  <br>
+    element  <br> 
+    element,element... <br> 
+</body>
+</html>
