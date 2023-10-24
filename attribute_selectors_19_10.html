@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        /* 1. CSS [attribute] Selector  */
+        /* a[target]{
+            background-color: bisque;
+        } */
+
+        /* 2. CSS [attribute = "Value"] Selector */
+        /* a[target="_blank"]{
+            background-color: yellow;
+        } */
+
+        /* img[width="300px"]
+        {
+            border: 5px double red;
+        } */
+
+        /* class[attribute|="Value"]  Selector (space or -)*/
+        [class|="top"]{
+            background: violet;
+        }
+
+        /* class[attribute|="Value"]  Selector */
+        /* [class ^="to"]
+        {
+            background-color: burlywood;
+        } */
+
+        /* class[attribute$="Value"]  Selector */
+
+        [class$="line"]{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. CSS [attribute] Selector <br><br> -->
+    <!-- <a href="https://www.hackerrank.com/">Hackerrank</a>
+    <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+    <a href="http://www.disney.com" target="_parent">Disney</a>
+    <br><br> -->
+
+    <!-- 2. CSS [attribute = "Value"] Selector <br><br>
+    <a href="https://www.hackerrank.com/">Hackerrank</a>
+    <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+    <a href="http://www.disney.com" target="_parent">Disney</a>
+    
+    <img src="/images/nature1.avif" alt="" width="300px">
+    <img src="/images/nature2.avif" alt="">
+    <br><br> -->
+
+    <h2>class[attribute|="Value"]  Selector</h2>  [class|="top-Param"], [class|="top Param"]
+    <h1 class="top-header">Hello Param</h1>
+    <h1 class="top-text">Namstey</h1>
+    <h1 class="topcontent">Kem Chho??</h1>
+    <h1 class="top">Majama</h1>
+
+
+    <!-- <h2>class[attribute^="Value"]  Selector (Starting)</h2>
+    <h1 class="top-header">Hello Param</h1>
+    <h1 class="top-text">Namstey</h1>
+    <h1 class="topcontent">Kem Chho??</h1>
+    <h1 class="to">Majama</h1> -->
+
+    <!-- <h2>class[attribute$="Value"]  Selector (Ending)</h2> 
+    <div class="first_line">First div element</div>
+    <div class="second">Second div element</div>
+    <div class="my-line">Third div element</div>
+    <p class="myline">My paragraph element</p> -->
+</body>
+</html>

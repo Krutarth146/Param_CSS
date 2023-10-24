@@ -30,13 +30,13 @@
             background-color: green;
         }
 
-        div ~ p{
+        /* div ~ p{
             background-color: burlywood;
-        }
+        } */
     </style>
 </head>
 <body>
-    <!-- Combinator Means Relationship between the Selectors
+    Combinator Means Relationship between the Selectors
 
     1. descendant Selector (space) <br>
     2. Child Selector (>) <br>
@@ -55,7 +55,7 @@
 <br><br><br>
 
 
-    2. Child Selector (>) <br>
+    2. Child Selector (>) (Direct Child) <br>
     <div>
         <p>Para 1 Under div</p>
         <p>Para 2 Under div</p>
@@ -74,12 +74,12 @@
 
     3. adjacent sibling Selector (+) <br>
 
+    <p>(After Div first p Tag Only)</p> 
     <div>
         <p>Paragraph 1 Under div</p>
         <p>Paragraph 2 Under div</p>
     </div>
     
-    <p>Para 4 outside div</p>
     <p>Para 3 outside div</p>
 
     <div>
@@ -89,13 +89,13 @@
 
     <p>Para 8 outside div</p>
     <p>Para 7 outside div</p>
-    <br><br><hr><br> -->
+    <br><br><hr><br>
 
 
-    4. General Sibling Selector (~) <br>
+    <!-- 4. General Sibling Selector (~) <br>
 
     <h1>H1 Tag</h1>
-    <p>Para 1</p>
+    <p>After div all P Tags</p>
 
     <div>
         <p>Para 2</p>
@@ -105,6 +105,6 @@
 
     <samp>Sample Tag</samp>
 
-    <p>Para 4</p>
+    <p>Para 4</p> -->
 </body>
 </html>
