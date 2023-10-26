@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        p::first-line{
+            color: red;
+        }
+
+        p::first-letter{
+            color: blue;
+            font-size: larger;
+        }
+        
+        p.intro::first-letter{
+            font-size: 32px;
+            color: black;
+        }
+
+        h1::before{
+            content: "Hello ";
+            /* content: url(smily.gif); */
+        }
+
+        ::selection{
+            background-color: black;
+            color: red;
+        } 
+        
+        ::marker{
+            color: red;
+        }
+
+        p:nth-last-child(2)
+        {
+            color: aquamarine;
+            background-color: bisque;
+        }
+
+        div:nth-child(2)
+        {
+            background: red;
+        }
+
+        :nth-child(3)
+        {
+            background: yellow;
+        }
+
+        li:nth-child(2)
+        {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam magni nemo deserunt ratione dicta eum reprehenderit expedita temporibus ipsum? Amet!</p>
+
+    <p class="intro">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis libero quo obcaecati iusto totam veniam dolorum iste at, non eveniet alias, doloribus dolore sed! Nemo deleniti harum totam modi ex?
+    </p>
+
+    <h1>This is Heading1</h1>
+
+    <ul>
+        <li>Home</li>
+        <li>Home2</li>
+        <li>Home3</li>
+        <li>Home4</li>
+    </ul>
+
+    <ol>
+        <li>MOnday</li>
+        <li>Tuesday</li>
+    </ol> -->
+
+    <div>
+        <p>This is Para</p>
+    </div>
+    <div>
+        <p>This is Para</p>
+    </div>
+    <div>
+        <p>This is Para</p>
+    </div>
+    <div>
+        <p>This is Para</p>
+    </div>
+    <div>
+        <p>This is Para</p>
+    </div>
+
+    <ul>
+        <li>First Line of Item</li>
+        <li>second Line of Item</li>
+        <li>Third Line of Item</li>
+    </ul>
+</body>
+</html>

@@ -57,8 +57,17 @@
             color: red;
         }
 
-        p:second-child{
-            color: brown;
+        p i:first-child{
+            color: cornflowerblue;
+        }
+
+        p:first-child i
+        {
+            color: aqua;
+        }
+
+        input:focus{
+            background-color: yellow;
         }
     </style>
 </head>
@@ -76,7 +85,7 @@
         <p>Hello Para!</p>
     </div> -->
 
-    <p>THis is Paragraph</p>
+    <p>This <i>This is First P and 1 I class</i>is Paragraph</p>
     <p>THis is Paragraph</p>
 
     <div>
@@ -84,5 +93,13 @@
         <p>THis is Paragraph</p>
         <p>THis is Paragraph</p>
     </div>
+
+    <p>I am a <i>strong</i> I am a <i>Strong</i> Person.</p>
+
+
+    <form action="">
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname">
+    </form>
 </body>
 </html>
