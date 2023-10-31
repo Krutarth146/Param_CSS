@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+
+    <style>
+        p::first-letter{
+           color: red; 
+           font-size: 30px;
+        }
+
+        p.jkl::first-line{
+            background-color: aquamarine;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            line-height: 1.5rem;
+        }
+
+        h1{
+            color: blue;
+        }
+
+
+        h1::before{
+            content: "Hello";
+        }
+
+        h1::after{
+            content: "Good Morning!";
+        }
+
+
+        ::marker{
+            color: red;
+            font-size: 23px;
+        }
+
+        h1::selection{
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Navratri</li>
+        <li>Diwali</li>
+        <li>Uttrayan</li>
+    </ul>
+    
+
+    <ol>
+        <li>Table</li>
+        <li>Chair</li>
+        <li>Double Chair</li>
+    </ol>
+
+    <p class = "jkl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore dolorem, aspernatur, soluta placeat eligendi error veritatis ipsum, animi dignissimos voluptates beatae repellat aperiam accusamus sit. Sapiente quibusdam mollitia tempora et aliquid, aspernatur ea illum at. Itaque reprehenderit fugit harum dolorem delectus illo, totam omnis, explicabo officiis rem exercitationem magnam.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est qui voluptate perspiciatis praesentium iure, accusantium id, dolorem aspernatur eius vero voluptatem totam, corrupti harum dicta. Dignissimos tenetur officiis labore.
+    </p>
+
+    <h1>
+        Param Patel
+    </h1>
+</body>
+</html>

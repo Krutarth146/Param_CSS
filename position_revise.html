@@ -6,12 +6,29 @@
     <title>Position Revision</title>
 
     <style>
+
+        body{
+            height: 200vh;
+        }
+
+        .main{
+            width: 600px;
+            height: 600px;
+            background-color: brown;
+            margin: 50px auto;
+            position: relative;
+        }
+
+
         .container{
             width: 400px;
-            height: 400px;
-            margin: 100px auto;
+            /* height: 300vh; */
+            height: 500vh;
+            /* margin: 100px auto; */
             background-color: bisque;
-            position: relative;
+            /* position: absolute; */
+            top: 40px;
+            right: 20px;
         }
 
         .box{
@@ -25,16 +42,16 @@
             background-color: red;
             /* position: static; */
             position: relative;
-            top: 20px;
+            top: 0px;
             left: 50px;
-            right: 60px;
+            /* right: 60px; */
         }
 
         .b2{
             background-color: yellow;
             position: absolute;
-            top: 10px;
-            right: 20px;
+            top: 20px;
+            right: 0px;
             width: 120px;
             height: 70px;
             border-radius: 20px;
@@ -43,20 +60,32 @@
 
         .b3{
             background-color: blue;
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .b4{
             background-color: magenta;
+            position: sticky;
+            top: 10px;
         }
     </style>
 </head>
 <body>
     <!-- .container>.box.b$*4 -->
-    <div class="container">
-        <div class="box b1">Relative</div>
-        <div class="box b2">Absolute</div>
-        <div class="box b3"></div>
-        <div class="box b4"></div>
+
+    <div class="main">
+        <div class="container">
+            <div class="box b1">Relative</div>
+            <div class="box b2">Absolute</div>
+            <div class="box b3">Fixed</div>
+            <div class="box b4">Sticky</div>
+        </div>
     </div>
 </body>
 </html>
