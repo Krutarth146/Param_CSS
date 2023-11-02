@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 7px solid red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow: ; HW*/
+            /* justify-content: center;  */
+            /* justify-content: end;  */
+            /* align-items: end;   */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            border: 5px solid blue;
+            font-size: 40px;
+        }
+
+        /* .b2{
+            order: -1;
+            flex-grow: 2;
+            flex-shrink: 2;
+        } */
+
+        .b3{
+            /* flex-shrink: 3; */
+        }
+
+        .b4{
+            flex-basis: 300px;
+        }
+
+        .b5{
+            align-self: start;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.container>.box.b$*4 -->
+    <div class="container">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+        <div class="box b5">5</div>
+    </div>
+</body>
+</html>
