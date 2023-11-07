@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            /* background-color: burlywood; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            font-size: xx-large;
+            padding: 50px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            /* transition-property: background-color,width; */
+            /* transition-property: all; */
+            /* transition-duration: 3s; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+            /* transition-delay: 2s; */
+            transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+        }
+        
+        .box:hover{
+            /* transform: translateX(90px); */
+            /* transform: translateY(90px); */
+            /* transform: translate(-90px, 90px); */
+            /* transform: rotate(-30deg); */
+            /* transform: rotateX(60deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: scaleX(0.5); */
+            /* transform: scaleY(4); */
+            /* transform: scale(4,1.5); */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skew(-30deg, 10deg); */
+            background-color: skyblue;
+            /* width: 200px;
+            height: 300px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">Param</div>
+    </div>
+</body>
+</html>
